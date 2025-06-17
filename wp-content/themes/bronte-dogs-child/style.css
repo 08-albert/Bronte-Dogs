@@ -1,0 +1,297 @@
+/*
+ Theme Name:   Bronte Dogs Child
+ Template:     bronte-dogs
+ Version:      1.0
+*/
+
+@import url("contact.css");
+
+
+
+.underline-yellow {
+  display: inline-block;
+  border-bottom: 0.2em solid rgba(249, 217, 35, 0.8);
+  line-height: 1;
+}
+
+#clientsCarousel .card-body {
+  position: relative;
+  z-index: 2;
+  padding: 0.75rem;
+}
+
+#clientsCarousel .card-text {
+  margin-bottom: 0.5rem;
+}
+
+#clientsCarousel .carousel-item {
+  transition: transform 0.5s linear;
+}
+
+:root {
+  --brand-green: #00A86B;
+}
+
+#clientsCarousel .card {
+  height: 250px;
+  background-color: #FCFCFE;
+}
+
+#clientsCarousel .card-body {
+  height: 250px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#clientsCarousel .card .text-warning,
+#clientsCarousel .card-body span {
+  color: var(--brand-green) !important;
+}
+
+.custom-description {
+  font-weight: 400;
+  font-size: 16.5px;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.home-hero {
+  background-color: #f8f9fa;
+}
+
+.custom-font-size {
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+
+.home-hero .display-4 {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #27AE60;
+  line-height: 51px;
+  width: 428px;
+  height: 153px;
+}
+
+.home-hero .lead {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #323643;
+  max-width: 540px;
+}
+
+.home-hero .btn-success {
+  background-color: #27AE60;
+  border-color: #27AE60;
+  font-weight: 600;
+}
+
+.custom-btn-color {
+  background-color: #27AE60;
+}
+
+.custom-price {
+  color: #27AE60 !important;
+}
+
+.perfect-highlight {
+  color: #23A948;
+}
+
+.home-hero .btn-success:hover {
+  background-color: #219653;
+  border-color: #219653;
+}
+
+.home-hero .btn-outline-success {
+  color: #27AE60;
+  border-color: #27AE60;
+  font-weight: 600;
+}
+
+.home-hero .btn-outline-success:hover {
+  background-color: #27AE60;
+  color: #fff;
+}
+
+.home-hero .img-fluid {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  padding-top: 76px;
+}
+
+header.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.menu-header {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menu-header li a {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #333;
+  transition: color .2s ease;
+}
+
+.menu-header li a:hover {
+  color: #1e90ff;
+}
+
+.btn-cta {
+  padding: 0.5rem 1rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+  background-color: #27AE60;
+}
+
+.logo-header {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-brand {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+
+.brand-main {
+  color: #000;
+}
+
+.brand-accent {
+  color: #27AE60;
+}
+
+.custom-background-color {
+  background-color: #27AE60;
+}
+
+.site-footer {
+  position: static;
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  background: transparent;
+  padding: 0;
+}
+
+.footer-card {
+  max-width: 1040px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.footer-card .navbar-brand img {
+  height: 32px;
+  width: auto;
+}
+
+.site-footer .copyright {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #6c757d;
+}
+
+.footer-floating-card {
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1040px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  padding: 48px 56px;
+  z-index: 10;
+}
+
+.footer-floating-card .navbar-brand img {
+  height: 32px;
+  width: auto;
+}
+
+.footer-floating-card .btn {
+  font-weight: 600;
+  padding: 10px 24px;
+}
+
+.footer-floating-card .copyright {
+  color: #6c757d;
+  font-size: .8125rem;
+}
+
+@media (max-width: 1440px) {
+  #menu-header-menu {
+    display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .home-hero .display-4 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .home-hero .lead {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-floating-card {
+    padding: 32px;
+    bottom: -4rem;
+  }
+  .footer-floating-card .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-floating-card .navbar-brand {
+    margin-bottom: 1rem;
+  }
+  .footer-floating-card .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-card {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .footer-card .navbar-brand {
+    margin-right: 0 !important;
+  }
+  .footer-card .d-flex {
+    justify-content: center;
+  }
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  bottom: -3rem;
+  position: relative;
+}
